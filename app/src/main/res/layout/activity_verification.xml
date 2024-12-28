@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center_horizontal"
+    tools:context=".VerificationActivity">
+    <ImageView
+        android:src="@drawable/peoplechat"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+    <TextView
+        android:text="OTP Verification"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#673AB7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="We will send an"
+                android:textStyle="normal"
+                android:textSize="16dp"
+                android:textColor="#673AB7"
+                android:layout_marginEnd="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="One Time Password"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="#673AB7"
+                android:layout_marginRight="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    <TextView
+        android:text="On this mobile number"
+        android:textStyle="normal"
+        android:textSize="16dp"
+        android:textColor="#673AB7"
+        android:layout_marginRight="6dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.cardview.widget.CardView
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:layout_margin="15dp"
+            android:background="@color/white"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editnumber"
+                android:hint="Enter your mobile number"
+                android:padding="10dp"
+                android:ems="1"
+                android:inputType="phone"
+                android:textSize="20sp"
+                android:textStyle="bold|normal"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:id="@+id/Continuebtn"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:background="#673AB7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+  </LinearLayout>
